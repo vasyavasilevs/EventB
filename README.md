@@ -1,2 +1,2 @@
 # EventB
-Run with Rodin platform
+Run using the "Rodin" platform
