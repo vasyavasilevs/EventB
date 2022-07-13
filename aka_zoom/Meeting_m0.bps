@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+    <org.eventb.core.psStatus name="inv3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="inv4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ADD_STUDENT/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ADD_STUDENT/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ADD_LECTURER/grd2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ADD_LECTURER/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="REMOVE_PARTICIPANT/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="REMOVE_PARTICIPANT/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="BAN_STUDENT/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>

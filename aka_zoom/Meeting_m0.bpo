@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="5">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="ALLOWED_PARTICIPANTS" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+        <org.eventb.core.poIdentifier name="students_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="lecturers_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poPredicate name="ALLOWED_PARTICIPANTT" org.eventb.core.predicate="students_limit=45" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.axiom#)"/>
+        <org.eventb.core.poPredicate name="ALLOWED_PARTICIPANTU" org.eventb.core.predicate="lecturers_limit=5" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="ALLOWED_PARTICIPANTV" org.eventb.core.predicate="finite(ALLOWED_PARTICIPANTS)" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.axiom#,"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="students" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+        <org.eventb.core.poIdentifier name="lecturers" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="inv3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#HYPMeeting_c2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(students)" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#HYPMeeting_c2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="inv4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#HYPMeeting_c3"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(lecturers)" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#."/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#."/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#HYPMeeting_c3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTALLHYPMeeting_c5"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(∅ ⦂ ℙ(ALLOWED_PARTICIPANTS))≤students_limit" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#HYPMeeting_c3|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTALLHYPMeeting_c5"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(∅ ⦂ ℙ(ALLOWED_PARTICIPANTS))≤lecturers_limit" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#."/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#."/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTMeeting_c5" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="students'" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+        <org.eventb.core.poIdentifier name="lecturers'" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPMeeting_c5" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTIDENTMeeting_c5" org.eventb.core.poStamp="5"/>
+    <org.eventb.core.poSequent name="ADD_STUDENT/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTHYPMeeting_c6'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(students)" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#\/|org.eventb.core.guard#*"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#\/|org.eventb.core.guard#*"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTHYPMeeting_c6'"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ADD_STUDENT/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTALLHYPMeeting_c6"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(students∪{student_id})≤students_limit" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#\/"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poSequent#ADD_STUDENT\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#HYPMeeting_c3|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTMeeting_c6" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="student_id" org.eventb.core.type="ALLOWED_PARTICIPANTS"/>
+        <org.eventb.core.poIdentifier name="students'" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPMeeting_c6'" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTIDENTMeeting_c6" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="student_id∈ALLOWED_PARTICIPANTS" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#\/|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPMeeting_c6" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTHYPMeeting_c6'" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="card(students)&lt;students_limit" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#\/|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ADD_LECTURER/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTHYPMeeting_c7'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="finite(lecturers)" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#0|org.eventb.core.guard#)"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#0|org.eventb.core.guard#)"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTHYPMeeting_c7'"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ADD_LECTURER/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTALLHYPMeeting_c7"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(lecturers∪{lecturer_id})≤lecturers_limit" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#."/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#0"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#."/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poSequent#ADD_LECTURER\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTMeeting_c7" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="lecturer_id" org.eventb.core.type="ALLOWED_PARTICIPANTS"/>
+        <org.eventb.core.poIdentifier name="lecturers'" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPMeeting_c7'" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTIDENTMeeting_c7" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lecturer_id∈ALLOWED_PARTICIPANTS" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#0|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPMeeting_c7" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTHYPMeeting_c7'" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="card(lecturers)&lt;lecturers_limit" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#0|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="REMOVE_PARTICIPANT/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTALLHYPMeeting_c8"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(students ∖ {participant_id})≤students_limit" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poSequent#REMOVE_PARTICIPANT\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#HYPMeeting_c3|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="REMOVE_PARTICIPANT/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTALLHYPMeeting_c8"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(lecturers ∖ {participant_id})≤lecturers_limit" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#."/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#1"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#."/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poSequent#REMOVE_PARTICIPANT\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTMeeting_c8" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="students'" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+        <org.eventb.core.poIdentifier name="lecturers'" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+        <org.eventb.core.poIdentifier name="participant_id" org.eventb.core.type="ALLOWED_PARTICIPANTS"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPMeeting_c8" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTIDENTMeeting_c8" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="participant_id∈ALLOWED_PARTICIPANTS" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#1|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="BAN_STUDENT/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTALLHYPMeeting_c9"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="card(students ∖ {student_id})≤students_limit" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#-"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poSequent#BAN_STUDENT\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#HYPMeeting_c3|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTMeeting_c9" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poIdentifier name="student_id" org.eventb.core.type="ALLOWED_PARTICIPANTS"/>
+        <org.eventb.core.poIdentifier name="students'" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPMeeting_c9" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#EVTIDENTMeeting_c9" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="student_id∈students" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.event#2|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="HYPMeeting_c2" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="students⊆ALLOWED_PARTICIPANTS" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#*"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lecturers⊆ALLOWED_PARTICIPANTS" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#,"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="HYPMeeting_c3" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#HYPMeeting_c2" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="card(students)≤students_limit" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#-"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_m0.bpo|org.eventb.core.poFile#Meeting_m0|org.eventb.core.poPredicateSet#HYPMeeting_c3" org.eventb.core.poStamp="5">
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="card(lecturers)≤lecturers_limit" org.eventb.core.source="/aka_zoom/Meeting_m0.bum|org.eventb.core.machineFile#Meeting_m0|org.eventb.core.invariant#."/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="ALLOWED_PARTICIPANTS" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+        <org.eventb.core.poIdentifier name="students_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="lecturers_limit" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_c0.bpo|org.eventb.core.poFile#Meeting_c0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="students_limit=45" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.axiom#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lecturers_limit=5" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="finite(ALLOWED_PARTICIPANTS)" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.axiom#,"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

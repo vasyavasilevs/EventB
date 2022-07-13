@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+        <org.eventb.core.poIdentifier name="ALLOWED_PARTICIPANTS" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+        <org.eventb.core.poIdentifier name="students_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="lecturers_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poPredicate name="ALLOWED_PARTICIPANTT" org.eventb.core.predicate="students_limit=45" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.axiom#)"/>
+        <org.eventb.core.poPredicate name="ALLOWED_PARTICIPANTU" org.eventb.core.predicate="lecturers_limit=5" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="ALLOWED_PARTICIPANTV" org.eventb.core.predicate="finite(ALLOWED_PARTICIPANTS)" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.axiom#,"/>
+        <org.eventb.core.poIdentifier name="ROLES" org.eventb.core.type="ℙ(ROLES)"/>
+        <org.eventb.core.poIdentifier name="Student" org.eventb.core.type="ROLES"/>
+        <org.eventb.core.poIdentifier name="Administrator" org.eventb.core.type="ROLES"/>
+        <org.eventb.core.poIdentifier name="Lecturer" org.eventb.core.type="ROLES"/>
+        <org.eventb.core.poIdentifier name="Banned" org.eventb.core.type="ROLES"/>
+        <org.eventb.core.poIdentifier name="admin_limit" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/aka_zoom/Meeting_c1.bpo|org.eventb.core.poFile#Meeting_c1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(ROLES,{Student},{Lecturer},{Administrator},{Banned})" org.eventb.core.source="/aka_zoom/Meeting_c1.buc|org.eventb.core.contextFile#Meeting_c1|org.eventb.core.axiom#-"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="admin_limit=10" org.eventb.core.source="/aka_zoom/Meeting_c1.buc|org.eventb.core.contextFile#Meeting_c1|org.eventb.core.axiom#\/"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

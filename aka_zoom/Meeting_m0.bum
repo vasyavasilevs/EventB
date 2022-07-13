@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="students ≔ ∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="lecturers ≔ ∅" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="Meeting_c0"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="students"/>
+    <org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="students ⊆ ALLOWED_PARTICIPANTS"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="lecturers"/>
+    <org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="lecturers ⊆ ALLOWED_PARTICIPANTS"/>
+    <org.eventb.core.invariant name="-" org.eventb.core.label="inv3" org.eventb.core.predicate="card(students) ≤ students_limit"/>
+    <org.eventb.core.invariant name="." org.eventb.core.label="inv4" org.eventb.core.predicate="card(lecturers) ≤ lecturers_limit"/>
+    <org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ADD_STUDENT">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="student_id"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="student_id ∈ ALLOWED_PARTICIPANTS"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="students ≔ students ∪ {student_id}" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="card(students) &lt; students_limit"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="0" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ADD_LECTURER">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="lecturer_id"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="lecturer_id ∈ ALLOWED_PARTICIPANTS "/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="card(lecturers) &lt; lecturers_limit"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="lecturers ≔ lecturers ∪ {lecturer_id} " org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="REMOVE_PARTICIPANT">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="participant_id"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="participant_id ∈ ALLOWED_PARTICIPANTS"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="students ≔ students ∖ {participant_id}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="lecturers ≔ lecturers ∖ {participant_id} " org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="BAN_STUDENT">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="student_id"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="student_id ∈ students"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="students ≔ students ∖ {student_id}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

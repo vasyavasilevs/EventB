@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scExtendsContext name="'" org.eventb.core.scTarget="/aka_zoom/Meeting_c0.bcc|org.eventb.core.scContextFile#Meeting_c0" org.eventb.core.source="/aka_zoom/Meeting_c1.buc|org.eventb.core.contextFile#Meeting_c1|org.eventb.core.extendsContext#'"/>
+    <org.eventb.core.scInternalContext name="Meeting_c0">
+        <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="students_limit=45" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.axiom#)" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="lecturers_limit=5" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.axiom#+" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="finite(ALLOWED_PARTICIPANTS)" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.axiom#," org.eventb.core.theorem="false"/>
+        <org.eventb.core.scConstant name="students_limit" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.constant#(" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.scCarrierSet name="ALLOWED_PARTICIPANTS" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(ALLOWED_PARTICIPANTS)"/>
+        <org.eventb.core.scConstant name="lecturers_limit" org.eventb.core.source="/aka_zoom/Meeting_c0.buc|org.eventb.core.contextFile#Meeting_c0|org.eventb.core.constant#*" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.scInternalContext>
+    <org.eventb.core.scAxiom name="Meeting_c1" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(ROLES,{Student},{Lecturer},{Administrator},{Banned})" org.eventb.core.source="/aka_zoom/Meeting_c1.buc|org.eventb.core.contextFile#Meeting_c1|org.eventb.core.axiom#-" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="Meeting_c2" org.eventb.core.label="axm2" org.eventb.core.predicate="admin_limit=10" org.eventb.core.source="/aka_zoom/Meeting_c1.buc|org.eventb.core.contextFile#Meeting_c1|org.eventb.core.axiom#\/" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scConstant name="Student" org.eventb.core.source="/aka_zoom/Meeting_c1.buc|org.eventb.core.contextFile#Meeting_c1|org.eventb.core.constant#)" org.eventb.core.type="ROLES"/>
+    <org.eventb.core.scConstant name="Administrator" org.eventb.core.source="/aka_zoom/Meeting_c1.buc|org.eventb.core.contextFile#Meeting_c1|org.eventb.core.constant#+" org.eventb.core.type="ROLES"/>
+    <org.eventb.core.scCarrierSet name="ROLES" org.eventb.core.source="/aka_zoom/Meeting_c1.buc|org.eventb.core.contextFile#Meeting_c1|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(ROLES)"/>
+    <org.eventb.core.scConstant name="Lecturer" org.eventb.core.source="/aka_zoom/Meeting_c1.buc|org.eventb.core.contextFile#Meeting_c1|org.eventb.core.constant#*" org.eventb.core.type="ROLES"/>
+    <org.eventb.core.scConstant name="Banned" org.eventb.core.source="/aka_zoom/Meeting_c1.buc|org.eventb.core.contextFile#Meeting_c1|org.eventb.core.constant#," org.eventb.core.type="ROLES"/>
+    <org.eventb.core.scConstant name="admin_limit" org.eventb.core.source="/aka_zoom/Meeting_c1.buc|org.eventb.core.contextFile#Meeting_c1|org.eventb.core.constant#." org.eventb.core.type="ℤ"/>
+</org.eventb.core.scContextFile>
