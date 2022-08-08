@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scCarrierSet name="ADDRESS" org.eventb.core.source="/simple_bank/BankContext.buc|org.eventb.core.contextFile#BankContext|org.eventb.core.carrierSet#*" org.eventb.core.type="ℙ(ADDRESS)"/>
+    <org.eventb.core.scCarrierSet name="ACCOUNT" org.eventb.core.source="/simple_bank/BankContext.buc|org.eventb.core.contextFile#BankContext|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(ACCOUNT)"/>
+    <org.eventb.core.scCarrierSet name="NAME" org.eventb.core.source="/simple_bank/BankContext.buc|org.eventb.core.contextFile#BankContext|org.eventb.core.carrierSet#)" org.eventb.core.type="ℙ(NAME)"/>
+    <org.eventb.core.scCarrierSet name="CUSTOMER" org.eventb.core.source="/simple_bank/BankContext.buc|org.eventb.core.contextFile#BankContext|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(CUSTOMER)"/>
+</org.eventb.core.scContextFile>

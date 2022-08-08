@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="ADDRESS" org.eventb.core.type="ℙ(ADDRESS)"/>
+        <org.eventb.core.poIdentifier name="ACCOUNT" org.eventb.core.type="ℙ(ACCOUNT)"/>
+        <org.eventb.core.poIdentifier name="NAME" org.eventb.core.type="ℙ(NAME)"/>
+        <org.eventb.core.poIdentifier name="CUSTOMER" org.eventb.core.type="ℙ(CUSTOMER)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/simple_bank/BankContext.bpo|org.eventb.core.poFile#BankContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1"/>
+</org.eventb.core.poFile>

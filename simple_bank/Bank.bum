@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="customer ≔ ∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="account ≔ ∅" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="name ≔ ∅" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="address ≔ ∅" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="cust_acc ≔ ∅" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="balance ≔ ∅" org.eventb.core.label="act6"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="BankContext"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="customer"/>
+    <org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="customer ⊆ CUSTOMER"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="account"/>
+    <org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="account ⊆ ACCOUNT"/>
+    <org.eventb.core.invariant name="-" org.eventb.core.label="inv3" org.eventb.core.predicate="name ∈ customer → NAME"/>
+    <org.eventb.core.invariant name="." org.eventb.core.label="inv4" org.eventb.core.predicate="address ∈ customer → ADDRESS"/>
+    <org.eventb.core.invariant name="/" org.eventb.core.label="inv5" org.eventb.core.predicate="cust_acc ∈ customer ↔ account"/>
+    <org.eventb.core.invariant name="0" org.eventb.core.label="inv6" org.eventb.core.predicate="balance ∈ account → ℤ"/>
+    <org.eventb.core.variable name="1" org.eventb.core.identifier="name"/>
+    <org.eventb.core.variable name="2" org.eventb.core.identifier="address"/>
+    <org.eventb.core.variable name="3" org.eventb.core.identifier="cust_acc"/>
+    <org.eventb.core.variable name="4" org.eventb.core.identifier="balance"/>
+    <org.eventb.core.invariant name="5" org.eventb.core.comment="//aka balance ∈ acccount → ℕ" org.eventb.core.label="inv7" org.eventb.core.predicate="∀a· a ∈ account ⇒ balance(a) ≥ 0"/>
+    <org.eventb.core.invariant name="6" org.eventb.core.label="inv8" org.eventb.core.predicate="ran(cust_acc) = account"/>
+    <org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="REGISTER_CUSTOMER">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="c"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="n"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="a"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="c ∉ customer"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="n ∈ NAME"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="a ∈ ADDRESS"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="customer ≔ customer ∪ {c}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="name ≔ name ∪ {c ↦ n}" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="address ≔ address ∪ {c ↦ a}" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="CREATE_ACCOUNT">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="a"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="cs"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∉ account"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="cs ⊆ customer"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="cs ≠ ∅"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="account ≔ account ∪ {a}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="cust_acc ≔ cust_acc ∪ (cs × {a})" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="balance ≔ balance ∪ {a ↦ 0}" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="9" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INCREASE_BALANCE">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="a"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="m"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ account"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="m &gt; 0"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="balance ≔ balance  {a ↦ balance(a) + m} " org.eventb.core.comment="//aka balance(a) = balance(a) + m" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name=":" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DECREASE_BALANCE">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="a"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="m"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ account"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="m &gt; 0"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="m ≤ balance(a)"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="balance(a) ≔ balance(a) − m" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="TRANSFER_BALANCE">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="a"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="b"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="m"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ account"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="b ∈ account"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="a ≠ b"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd4" org.eventb.core.predicate="m &gt; 0"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd5" org.eventb.core.predicate="m ≤ balance(a)"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="balance ≔ balance  {a ↦ balance(a) − m, b ↦ balance(b) + m}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

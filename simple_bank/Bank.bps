@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+    <org.eventb.core.psStatus name="inv7/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="2" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="REGISTER_CUSTOMER/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="3" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="REGISTER_CUSTOMER/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="3" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="REGISTER_CUSTOMER/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="3" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="CREATE_ACCOUNT/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="4" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="CREATE_ACCOUNT/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="4" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="CREATE_ACCOUNT/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="4" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="CREATE_ACCOUNT/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="4" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INCREASE_BALANCE/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INCREASE_BALANCE/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INCREASE_BALANCE/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DECREASE_BALANCE/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DECREASE_BALANCE/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DECREASE_BALANCE/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DECREASE_BALANCE/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="TRANSFER_BALANCE/grd5/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="TRANSFER_BALANCE/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="TRANSFER_BALANCE/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="TRANSFER_BALANCE/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
+</org.eventb.core.psFile>
