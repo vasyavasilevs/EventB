@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="17">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="BUILDING" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="b1" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.poIdentifier name="b2" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.poIdentifier name="b3" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.poIdentifier name="u1" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="u2" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="u3" org.eventb.core.type="USER"/>
+        <org.eventb.core.poPredicate name="BUILDINH" org.eventb.core.predicate="partition(USER,{u1},{u2},{u3})" org.eventb.core.source="/reasoned_modelling/BuildingAccessContext.buc|org.eventb.core.contextFile#BuildingAccessContext|org.eventb.core.axiom#)"/>
+        <org.eventb.core.poPredicate name="BUILDINI" org.eventb.core.predicate="u1∈USER" org.eventb.core.source="/reasoned_modelling/BuildingAccessContext.buc|org.eventb.core.contextFile#BuildingAccessContext|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="BUILDINJ" org.eventb.core.predicate="u2∈USER" org.eventb.core.source="/reasoned_modelling/BuildingAccessContext.buc|org.eventb.core.contextFile#BuildingAccessContext|org.eventb.core.axiom#-"/>
+        <org.eventb.core.poPredicate name="BUILDINK" org.eventb.core.predicate="u3∈USER" org.eventb.core.source="/reasoned_modelling/BuildingAccessContext.buc|org.eventb.core.contextFile#BuildingAccessContext|org.eventb.core.axiom#\/"/>
+        <org.eventb.core.poPredicate name="BUILDINL" org.eventb.core.predicate="b1∈BUILDING" org.eventb.core.source="/reasoned_modelling/BuildingAccessContext.buc|org.eventb.core.contextFile#BuildingAccessContext|org.eventb.core.axiom#1"/>
+        <org.eventb.core.poPredicate name="BUILDINM" org.eventb.core.predicate="b2∈BUILDING" org.eventb.core.source="/reasoned_modelling/BuildingAccessContext.buc|org.eventb.core.contextFile#BuildingAccessContext|org.eventb.core.axiom#3"/>
+        <org.eventb.core.poPredicate name="BUILDINN" org.eventb.core.predicate="b3∈BUILDING" org.eventb.core.source="/reasoned_modelling/BuildingAccessContext.buc|org.eventb.core.contextFile#BuildingAccessContext|org.eventb.core.axiom#5"/>
+        <org.eventb.core.poPredicate name="BUILDINO" org.eventb.core.predicate="partition(BUILDING,{b1},{b2},{b3})" org.eventb.core.source="/reasoned_modelling/BuildingAccessContext.buc|org.eventb.core.contextFile#BuildingAccessContext|org.eventb.core.axiom#6"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.poIdentifier name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.poIdentifier name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContexz"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×BUILDING))∈(∅ ⦂ ℙ(USER)) ↔ (∅ ⦂ ℙ(BUILDING))" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContexz"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×BUILDING))∈(∅ ⦂ ℙ(USER)) ⇸ (∅ ⦂ ℙ(BUILDING))" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContexz"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×BUILDING))⊆(∅ ⦂ ℙ(USER×BUILDING))" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBuildingAccessContexz" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="location'" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.poIdentifier name="building'" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.poIdentifier name="user'" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="permission'" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBuildingAccessContexz" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTIDENTBuildingAccessContexz" org.eventb.core.poStamp="17"/>
+    <org.eventb.core.poSequent name="REGISTER_USER/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContex{"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permission∈user∪{u} ↔ building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#REGISTER_USER\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="REGISTER_USER/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContex{"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="location∈user∪{u} ⇸ building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#2"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#REGISTER_USER\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBuildingAccessContex{" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="user'" org.eventb.core.type="ℙ(USER)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBuildingAccessContex{" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTIDENTBuildingAccessContex{" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∉user" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#2|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="REGISTER_BUILDING/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContex\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permission∈user ↔ building∪{b}" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#3"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#REGISTER_BUILDING\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="REGISTER_BUILDING/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContex\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="location∈user ⇸ building∪{b}" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#3"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#REGISTER_BUILDING\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBuildingAccessContex|" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.poIdentifier name="building'" org.eventb.core.type="ℙ(BUILDING)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBuildingAccessContex|" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTIDENTBuildingAccessContex\|" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∉building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#3|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ADD_PERMISSION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContex}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permission∪{u ↦ b}∈user ↔ building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#4"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#ADD_PERMISSION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ADD_PERMISSION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContex}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="location⊆permission∪{u ↦ b}" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#4"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#ADD_PERMISSION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBuildingAccessContex}" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="permission'" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBuildingAccessContex}" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTIDENTBuildingAccessContex}" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈user" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#4|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="b∈building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#4|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ADD_MULTIPERM/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContex~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permission∪({u} × bs)∈user ↔ building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#5"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#ADD_MULTIPERM\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ADD_MULTIPERM/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContex~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="location⊆permission∪({u} × bs)" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#5"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#ADD_MULTIPERM\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBuildingAccessContex~" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="bs" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.poIdentifier name="permission'" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBuildingAccessContex~" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTIDENTBuildingAccessContex~" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈user" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#5|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="bs⊆building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#5|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ENTER_BUILDING/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="location∪{u ↦ b}∈user ⇸ building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#ENTER_BUILDING\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ENTER_BUILDING/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="location∪{u ↦ b}⊆permission" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#6"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#ENTER_BUILDING\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBuildingAccessContey'" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="location'" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBuildingAccessContey'" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTIDENTBuildingAccessContey'" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∉dom(location)" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#6|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="u ↦ b∈permission" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#6|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="EXIT_BUILDING/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey("/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{u} ⩤ location∈user ⇸ building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#EXIT_BUILDING\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="EXIT_BUILDING/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey("/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{u} ⩤ location⊆permission" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#7"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#EXIT_BUILDING\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBuildingAccessContey(" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="location'" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBuildingAccessContey(" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTIDENTBuildingAccessContey(" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈dom(location)" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#7|org.eventb.core.guard#("/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="REMOVE_PERM/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey)"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{u} ⩤ permission∈user ↔ building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#REMOVE_PERM\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="REMOVE_PERM/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey)"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="location⊆{u} ⩤ permission" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#REMOVE_PERM\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBuildingAccessContey)" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="permission'" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBuildingAccessContey)" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTIDENTBuildingAccessContey)" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈user" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#8|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="u∉dom(location)" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#8|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="REMOVE_SINGLE_PERM/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey*"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permission ∖ {u ↦ b}∈user ↔ building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#REMOVE_SINGLE_PERM\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="REMOVE_SINGLE_PERM/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey*"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="location⊆permission ∖ {u ↦ b}" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#9"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#REMOVE_SINGLE_PERM\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBuildingAccessContey*" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="permission'" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBuildingAccessContey*" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTIDENTBuildingAccessContey*" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u ↦ b∈permission" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#9|org.eventb.core.guard#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="u ↦ b∉location" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#9|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="DEREGISTER_BUILDING/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey+"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permission ⩥ {b}∈user ↔ building ∖ {b}" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#:"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#DEREGISTER_BUILDING\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="DEREGISTER_BUILDING/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey+"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="location∈user ⇸ building ∖ {b}" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#:"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#DEREGISTER_BUILDING\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="DEREGISTER_BUILDING/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey+"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="location⊆permission ⩥ {b}" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#:"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#DEREGISTER_BUILDING\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBuildingAccessContey+" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.poIdentifier name="building'" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.poIdentifier name="permission'" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBuildingAccessContey+" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTIDENTBuildingAccessContey+" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∈building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#:|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="b∉ran(location)" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#:|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="DEREGISTER_USER/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey,"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{u} ⩤ permission∈user ∖ {u} ↔ building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#;"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#DEREGISTER_USER\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="DEREGISTER_USER/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey,"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="location∈user ∖ {u} ⇸ building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#;"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#DEREGISTER_USER\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="DEREGISTER_USER/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTALLHYPBuildingAccessContey,"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="location⊆{u} ⩤ permission" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#;"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poSequent#DEREGISTER_USER\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBuildingAccessContey," org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="user'" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="permission'" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBuildingAccessContey," org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#EVTIDENTBuildingAccessContey," org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈user" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#;|org.eventb.core.guard#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="u∉dom(location)" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.event#;|org.eventb.core.guard#)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/reasoned_modelling/BuildingAccess.bpo|org.eventb.core.poFile#BuildingAccess|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="17">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="user⊆USER" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#*"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="building⊆BUILDING" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="permission∈user ↔ building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#\/"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="location∈user ⇸ building" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="location⊆permission" org.eventb.core.source="/reasoned_modelling/BuildingAccess.bum|org.eventb.core.machineFile#BuildingAccess|org.eventb.core.invariant#1"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

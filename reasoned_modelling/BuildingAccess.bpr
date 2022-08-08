@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×BUILDING))∈(∅ ⦂ ℙ(USER)) ↔ (∅ ⦂ ℙ(BUILDING))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×BUILDING))∈(∅ ⦂ ℙ(USER)) ⇸ (∅ ⦂ ℙ(BUILDING))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×BUILDING))⊆(∅ ⦂ ℙ(USER×BUILDING))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="REGISTER_USER/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p4,p3,p5">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬u∈user"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="u∉user"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="permission∈user∪{u} ↔ building"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="REGISTER_USER/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p4,p3,p5">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="location∈user∪{u} ⇸ building"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬u∈user"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="u∉user"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="REGISTER_BUILDING/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p4,p3,p5">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="b∉building"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="permission∈user ↔ building∪{b}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬b∈building"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="REGISTER_BUILDING/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p4,p3,p5">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="b∉building"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="location∈user ⇸ building∪{b}"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬b∈building"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ADD_PERMISSION/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p5,p4,p1,p2">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈user"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="b∈building"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="permission∪{u ↦ b}∈user ↔ building"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ADD_PERMISSION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p5,p4,p1,p2">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="location⊆permission∪{u ↦ b}"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈user"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="b∈building"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ADD_MULTIPERM/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p5,p3,p1,p4">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="bs" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈user"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="permission∪({u} × bs)∈user ↔ building"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="bs⊆building"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ADD_MULTIPERM/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p5,p3,p1,p4">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="bs" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈user"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="location⊆permission∪({u} × bs)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="bs⊆building"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ENTER_BUILDING/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="sl/ds" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="SELECT0" org.eventb.core.prHyps="p1,p3"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="CVC3" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p2,p6,p1,p3">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R1000"/>
+                                    <org.eventb.core.prString name=".config_id" org.eventb.core.prSValue="CVC3"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="location∪{u ↦ b}∈user ⇸ building"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="u ↦ b∈permission"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬u∈dom(location)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="u∉dom(location)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.smt.core.externalSMT"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.mngHyp"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ENTER_BUILDING/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="p1,p2">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p5" org.eventb.core.prHyps=""/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤∧⊤"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="location∪{u ↦ b}⊆permission"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u ↦ b∈permission"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission∧u ↦ b∈permission"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="REMOVE_PERM/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p4,p3,p1">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈user"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{u} ⩤ permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="REMOVE_PERM/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p5,p3,p1,p6">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="location⊆{u} ⩤ permission"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈user"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬u∈dom(location)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="u∉dom(location)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="EXIT_BUILDING/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p4,p2,p3">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{u} ⩤ location∈user ⇸ building"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="u∈dom(location)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="EXIT_BUILDING/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{u} ⩤ location⊆permission"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="building⊆BUILDING">
+            <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="u∈dom(location)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="user⊆USER">
+            <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="REMOVE_SINGLE_PERM/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p5,p3,p2,p6">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="permission ∖ {u ↦ b}∈user ↔ building"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="u ↦ b∈permission"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="u ↦ b∉location"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬u ↦ b∈location"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="REMOVE_SINGLE_PERM/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p5,p3,p2,p6">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="u ↦ b∈permission"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="location⊆permission ∖ {u ↦ b}"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="u ↦ b∉location"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬u ↦ b∈location"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DEREGISTER_BUILDING/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p5,p4,p1,p6">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="b∈building"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="b∉ran(location)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="permission ⩥ {b}∈user ↔ building ∖ {b}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬b∈ran(location)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DEREGISTER_BUILDING/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p5,p4,p1,p6">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="location∈user ⇸ building ∖ {b}"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="b∈building"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="b∉ran(location)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬b∈ran(location)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DEREGISTER_BUILDING/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p5,p4,p1,p6">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="b" org.eventb.core.type="BUILDING"/>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="b∈building"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="b∉ran(location)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="location⊆permission ⩥ {b}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬b∈ran(location)"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DEREGISTER_USER/inv3/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p5,p3,p1,p6">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="{u} ⩤ permission∈user ∖ {u} ↔ building"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈user"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬u∈dom(location)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="u∉dom(location)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DEREGISTER_USER/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p5,p3,p1,p6">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="location∈user ∖ {u} ⇸ building"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈user"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬u∈dom(location)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="u∉dom(location)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DEREGISTER_USER/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="BUILDING,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p5,p3,p1,p6">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="building" org.eventb.core.type="ℙ(BUILDING)"/>
+        <org.eventb.core.prIdent name="location" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(USER×BUILDING)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prIdent name="user" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="location⊆{u} ⩤ permission"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈user"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="permission∈user ↔ building"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬u∈dom(location)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="location⊆permission"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="building⊆BUILDING"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="u∉dom(location)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="user⊆USER"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="location∈user ⇸ building"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

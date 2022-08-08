@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="user ≔ ∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="building ≔ ∅" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="location ≔ ∅" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="permission ≔ ∅" org.eventb.core.label="act4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="BuildingAccessContext"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="user"/>
+    <org.eventb.core.invariant name="*" org.eventb.core.label="inv1" org.eventb.core.predicate="user ⊆ USER"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="building"/>
+    <org.eventb.core.invariant name="," org.eventb.core.label="inv2" org.eventb.core.predicate="building ⊆ BUILDING"/>
+    <org.eventb.core.variable name="-" org.eventb.core.identifier="location"/>
+    <org.eventb.core.variable name="." org.eventb.core.identifier="permission"/>
+    <org.eventb.core.invariant name="/" org.eventb.core.comment="//many-to-many relation" org.eventb.core.label="inv3" org.eventb.core.predicate="permission ∈ user ↔ building"/>
+    <org.eventb.core.invariant name="0" org.eventb.core.comment=" //many-to-one relation (function)" org.eventb.core.label="inv4" org.eventb.core.predicate="location ∈ user ⇸ building"/>
+    <org.eventb.core.invariant name="1" org.eventb.core.label="inv5" org.eventb.core.predicate="location ⊆ permission"/>
+    <org.eventb.core.event name="2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="REGISTER_USER">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="u"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∉ user"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="user ≔ user ∪ {u}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="3" org.eventb.core.comment="add a b to the set of allowed b-s to enter" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="REGISTER_BUILDING">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="b"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="b ∉ building"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="building ≔ building ∪ {b}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="4" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ADD_PERMISSION">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="u"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="b"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∈ user"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="b ∈ building"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="permission ≔ permission ∪ {u ↦ b}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ADD_MULTIPERM">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="u"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="bs"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∈ user"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="bs ⊆ building"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="permission ≔ permission ∪ ({u} × bs)" org.eventb.core.comment="//for each b in the subset (of set building) bs u has perm " org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ENTER_BUILDING">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="u"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="b"/>
+        <org.eventb.core.guard name=")" org.eventb.core.comment="//until this event" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∉ dom(location)"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="u ↦ b ∈ permission"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="location ≔ location ∪ {u ↦ b}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="EXIT_BUILDING">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="u"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∈ dom(location)"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="location ≔  {u} ⩤ location" org.eventb.core.comment="//domain subtraction, aka location \ {u ↦ b}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="REMOVE_PERM">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="u"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∈ user"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="permission ≔ {u} ⩤ permission" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="*" org.eventb.core.comment="//we can remove perm only from users not in the b" org.eventb.core.label="grd2" org.eventb.core.predicate="u ∉ dom(location)"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="9" org.eventb.core.comment="//rm perm for a user who is not in the building for which this permission is mapped" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="REMOVE_SINGLE_PERM">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="u"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="b"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="u ↦ b ∈ permission"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="u ↦ b ∉ location"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="permission ≔ permission ∖ {u ↦ b}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name=":" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DEREGISTER_BUILDING">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="b"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="b ∈ building"/>
+        <org.eventb.core.guard name=")" org.eventb.core.comment="//cause building should be empty" org.eventb.core.label="grd2" org.eventb.core.predicate="b ∉ ran(location)"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="building ≔ building ∖ {b}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="permission ≔ permission ⩥ {b}" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DEREGISTER_USER">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="u"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∈ user"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="u ∉ dom(location)"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="user ≔ user ∖ {u}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="permission ≔ {u} ⩤ permission" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>
