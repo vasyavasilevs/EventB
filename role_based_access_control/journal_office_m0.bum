@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="docs_for_r ≔ ∅" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="docs_for_re ≔ ∅" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="docs_for_rer ≔ ∅" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="readers ≔ ∅" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="editors ≔ ∅" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="admins ≔ ∅" org.eventb.core.label="act6"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="roles ≔ ∅" org.eventb.core.label="act7"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="employees ≔ ∅" org.eventb.core.label="act8"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="new_staff ≔ ∅" org.eventb.core.label="act9"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="priv_pairs ≔ ∅" org.eventb.core.label="act10"/>
+    </org.eventb.core.event>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="journal_office_c0"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="docs_for_r"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="docs_for_re"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="docs_for_rer"/>
+    <org.eventb.core.invariant name="," org.eventb.core.label="inv1" org.eventb.core.predicate="docs_for_r ⊆ DOCUMENTATION"/>
+    <org.eventb.core.invariant name="-" org.eventb.core.label="inv2" org.eventb.core.predicate="docs_for_re ⊆ DOCUMENTATION"/>
+    <org.eventb.core.invariant name="." org.eventb.core.label="inv3" org.eventb.core.predicate="docs_for_rer ⊆ DOCUMENTATION"/>
+    <org.eventb.core.event name="/" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ADD_DOCUMENTATION">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="doc_for_r_id"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="doc_for_re_id"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="doc_for_rer_id"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="doc_for_r_id ∈ DOCUMENTATION"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="doc_for_re_id ∈ DOCUMENTATION"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="doc_for_rer_id ∈ DOCUMENTATION"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="docs_for_r ≔ docs_for_r ∪ {doc_for_r_id}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="docs_for_re ≔ docs_for_re ∪ {doc_for_re_id}" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="docs_for_rer ≔ docs_for_rer ∪ {doc_for_rer_id} " org.eventb.core.label="act3"/>
+        <org.eventb.core.guard name="1" org.eventb.core.label="grd4" org.eventb.core.predicate="card(docs_for_r) &lt; docs_for_r_limit "/>
+        <org.eventb.core.guard name="2" org.eventb.core.label="grd5" org.eventb.core.predicate="card(docs_for_re) &lt; docs_for_re_limit"/>
+        <org.eventb.core.guard name="3" org.eventb.core.label="grd6" org.eventb.core.predicate="card(docs_for_rer) &lt; docs_for_rer_limit"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="0" org.eventb.core.label="inv4" org.eventb.core.predicate="card(docs_for_r) ≤ docs_for_r_limit"/>
+    <org.eventb.core.invariant name="1" org.eventb.core.label="inv5" org.eventb.core.predicate="card(docs_for_re) ≤ docs_for_re_limit"/>
+    <org.eventb.core.invariant name="2" org.eventb.core.label="inv6" org.eventb.core.predicate="card(docs_for_rer) ≤ docs_for_rer_limit"/>
+    <org.eventb.core.event name="3" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="REMOVE_DOCUMENTATION">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="doc_id"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="doc_id ∈ DOCUMENTATION"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="docs_for_r ≔ docs_for_r ∖ {doc_id}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="docs_for_re ≔ docs_for_re ∖ {doc_id}" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="docs_for_rer ≔ docs_for_rer ∖ {doc_id}" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="4" org.eventb.core.identifier="readers"/>
+    <org.eventb.core.variable name="5" org.eventb.core.identifier="editors"/>
+    <org.eventb.core.variable name="6" org.eventb.core.identifier="admins"/>
+    <org.eventb.core.invariant name="7" org.eventb.core.label="inv7" org.eventb.core.predicate="readers ⊆ STAFF"/>
+    <org.eventb.core.invariant name="8" org.eventb.core.label="inv8" org.eventb.core.predicate="editors ⊆ STAFF"/>
+    <org.eventb.core.invariant name="9" org.eventb.core.label="inv9" org.eventb.core.predicate="admins ⊆ STAFF"/>
+    <org.eventb.core.invariant name=":" org.eventb.core.label="inv10" org.eventb.core.predicate="card(readers) ≤ readers_limit"/>
+    <org.eventb.core.invariant name=";" org.eventb.core.label="inv11" org.eventb.core.predicate="card(editors) ≤ editors_limit"/>
+    <org.eventb.core.invariant name="=" org.eventb.core.label="inv12" org.eventb.core.predicate="card(admins) ≤ admins_limit"/>
+    <org.eventb.core.event name="&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ADD_STAFF">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="reader_id"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="editor_id"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="admin_id"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="reader_id ∈ STAFF"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="editor_id ∈ STAFF"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="admin_id ∈ STAFF"/>
+        <org.eventb.core.guard name="8" org.eventb.core.label="grd9" org.eventb.core.predicate="new_staff_id ∈ STAFF"/>
+        <org.eventb.core.guard name="-" org.eventb.core.label="grd4" org.eventb.core.predicate="card(readers) &lt; readers_limit"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd5" org.eventb.core.predicate="card(editors) &lt; editors_limit"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd6" org.eventb.core.predicate="card(admins) &lt; admins_limit"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="readers ≔ readers ∪ {reader_id}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="1" org.eventb.core.assignment="editors ≔ editors ∪ {editor_id}" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="2" org.eventb.core.assignment="admins ≔ admins ∪ {admin_id}" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="3" org.eventb.core.assignment="employees ≔ employees ∪ {reader_id ↦ Reader} ∪ {editor_id ↦ Editor} ∪ {admin_id ↦ Admin}" org.eventb.core.comment="//in the beginning " org.eventb.core.label="act4"/>
+        <org.eventb.core.parameter name="4" org.eventb.core.comment="//if the office needs a new vacancies" org.eventb.core.identifier="new_staff_id"/>
+        <org.eventb.core.guard name="6" org.eventb.core.label="grd8" org.eventb.core.predicate="card(new_staff) &lt; new_staff_limit"/>
+        <org.eventb.core.action name="7" org.eventb.core.assignment="new_staff ≔ new_staff ∪ {new_staff_id}" org.eventb.core.label="act5"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="?" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="REMOVE_STAFF">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="employee_id"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="employee_id ∈ STAFF"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="readers ≔ readers ∖ {employee_id}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="editors ≔ editors ∖ {employee_id}" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="admins ≔ admins ∖ {employee_id}" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="new_staff ≔ new_staff ∖ {employee_id}" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="employees ≔ {employee_id} ⩤ employees" org.eventb.core.label="act4"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="I" org.eventb.core.identifier="new_staff"/>
+    <org.eventb.core.variable name="@" org.eventb.core.identifier="roles"/>
+    <org.eventb.core.invariant name="A" org.eventb.core.label="inv13" org.eventb.core.predicate="roles ⊆ ROLES"/>
+    <org.eventb.core.invariant name="B" org.eventb.core.label="inv14" org.eventb.core.predicate="card(roles) ≤ roles_limit"/>
+    <org.eventb.core.event name="C" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ADD_ROLES">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="role_id"/>
+        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="role_id ∈ ROLES"/>
+        <org.eventb.core.guard name=")" org.eventb.core.comment="//initially ROLES is non-empty set" org.eventb.core.label="grd2" org.eventb.core.predicate="card(roles) &lt; roles_limit − card(ROLES)"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="roles ≔ roles ∪ {role_id}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="D" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="REMOVE_ROLES">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="role_id"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="roles ≔ roles ∖ {role_id}" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="role_id ∈ ROLES"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="E" org.eventb.core.identifier="employees"/>
+    <org.eventb.core.invariant name="F" org.eventb.core.label="inv15" org.eventb.core.predicate="employees ∈ STAFF ↔ ROLES"/>
+    <org.eventb.core.invariant name="J" org.eventb.core.label="inv17" org.eventb.core.predicate="new_staff ⊆ STAFF"/>
+    <org.eventb.core.invariant name="K" org.eventb.core.label="inv18" org.eventb.core.predicate="card(new_staff) ≤ new_staff_limit"/>
+    <org.eventb.core.event name="H" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ROLE_BLINDING">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="role_id"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="employee_id"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="role_id ∈ ROLES"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="employee_id ∈ STAFF"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="employees ≔ employees ∪ {employee_id ↦ role_id}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="L" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ROLE_UNBLINDING">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="role_id"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="employee_id"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="role_id ∈ ROLES"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="employee_id ∈ STAFF"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="employees ≔ employees ∖ {employee_id ↦ role_id}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.variable name="M" org.eventb.core.identifier="priv_pairs"/>
+    <org.eventb.core.invariant name="N" org.eventb.core.label="inv19" org.eventb.core.predicate="priv_pairs ∈ STAFF ↔ KINDS_OF_ACCESS "/>
+</org.eventb.core.machineFile>

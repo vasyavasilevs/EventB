@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="13">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="13">
+        <org.eventb.core.poIdentifier name="PRIVILEGES" org.eventb.core.type="ℙ(PRIVILEGES)"/>
+        <org.eventb.core.poIdentifier name="ROLES" org.eventb.core.type="ℙ(ROLES)"/>
+        <org.eventb.core.poIdentifier name="DOCUMENTATION" org.eventb.core.type="ℙ(DOCUMENTATION)"/>
+        <org.eventb.core.poIdentifier name="STAFF" org.eventb.core.type="ℙ(STAFF)"/>
+        <org.eventb.core.poIdentifier name="KINDS_OF_ACCESS" org.eventb.core.type="ℙ(KINDS_OF_ACCESS)"/>
+        <org.eventb.core.poIdentifier name="docs_for_r_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Admin" org.eventb.core.type="ROLES"/>
+        <org.eventb.core.poIdentifier name="readers_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="docs_for_re_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="editors_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Removal" org.eventb.core.type="KINDS_OF_ACCESS"/>
+        <org.eventb.core.poIdentifier name="docs_for_rer_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="new_staff_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Reader" org.eventb.core.type="ROLES"/>
+        <org.eventb.core.poIdentifier name="roles_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Reading" org.eventb.core.type="KINDS_OF_ACCESS"/>
+        <org.eventb.core.poIdentifier name="Editor" org.eventb.core.type="ROLES"/>
+        <org.eventb.core.poIdentifier name="admins_limit" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="Editing" org.eventb.core.type="KINDS_OF_ACCESS"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/role_based_access_control/journal_office_c0.bpo|org.eventb.core.poFile#journal_office_c0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="13">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="docs_for_r_limit=20" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#)"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="docs_for_re_limit=20" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#-"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="docs_for_rer_limit=20" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#."/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="finite(DOCUMENTATION)" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#\/"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="readers_limit=20" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#2"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="editors_limit=10" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#4"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="admins_limit=5" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#6"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="new_staff_limit=20" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#G"/>
+        <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="finite(STAFF)" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#7"/>
+        <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="roles_limit=10" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#:"/>
+        <org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="partition(ROLES,{Reader},{Editor},{Admin})" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#C"/>
+        <org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="finite(ROLES)" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#;"/>
+        <org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="partition(KINDS_OF_ACCESS,{Reading},{Editing},{Removal})" org.eventb.core.source="/role_based_access_control/journal_office_c0.buc|org.eventb.core.contextFile#journal_office_c0|org.eventb.core.axiom#A"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
