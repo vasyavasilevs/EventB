@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="2">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="2">
+        <org.eventb.core.poIdentifier name="ROLE" org.eventb.core.type="ℙ(ROLE)"/>
+        <org.eventb.core.poIdentifier name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+        <org.eventb.core.poIdentifier name="SUBJECT" org.eventb.core.type="ℙ(SUBJECT)"/>
+        <org.eventb.core.poIdentifier name="OBJECT" org.eventb.core.type="ℙ(OBJECT)"/>
+        <org.eventb.core.poIdentifier name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.poIdentifier name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.poIdentifier name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RBAC/RBAC_Context_0.bpo|org.eventb.core.poFile#RBAC_Context_0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="2">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})" org.eventb.core.source="/RBAC/RBAC_Context_0.buc|org.eventb.core.contextFile#RBAC_Context_0|org.eventb.core.axiom#+"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

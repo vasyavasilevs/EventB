@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ROLE,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(SUBJECT×ROLE))∈(∅ ⦂ ℙ(SUBJECT)) ↔ (∅ ⦂ ℙ(ROLE))"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Reading=Editing">
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Reading=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Editing=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="KIND_OF_ACCESS,OBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(OBJECT×KIND_OF_ACCESS))∈(∅ ⦂ ℙ(OBJECT)) ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Reading=Editing">
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Reading=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Editing=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="KIND_OF_ACCESS,OBJECT,ROLE">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ROLE×(OBJECT×KIND_OF_ACCESS)))∈(∅ ⦂ ℙ(ROLE)) ↔ (∅ ⦂ ℙ(OBJECT×KIND_OF_ACCESS))"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Reading=Editing">
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Reading=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Editing=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="OBJECT,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p6" org.eventb.core.prHyps=""/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(SUBJECT×OBJECT))∈(∅ ⦂ ℙ(SUBJECT)) ↔ (∅ ⦂ ℙ(OBJECT))"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Reading=Editing">
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Reading=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Editing=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CREATE_OBJECT/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="KIND_OF_ACCESS,OBJECT,ROLE,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p3,p1,p4,p6,p7,p8,p9">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="obj" org.eventb.core.type="OBJECT"/>
+        <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
+        <org.eventb.core.prIdent name="privileges" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
+        <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        <org.eventb.core.prIdent name="subj_obj_access" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
+        <org.eventb.core.prIdent name="subj_role" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
+        <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="privileges∈objects∪{obj} ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈roles ↔ privileges"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="privileges∈objects ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="subjects⊆SUBJECT"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="obj∈OBJECT"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="subj_role∈subjects ↔ roles"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="objects⊆OBJECT"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Reading=Editing"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Reading=Deletion"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Editing=Deletion"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="roles⊆ROLE"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CREATE_OBJECT/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5" org.eventb.core.prSets="KIND_OF_ACCESS,OBJECT,ROLE,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6,p7,p8,p9"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p6,p7,p8,p9"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p10"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p3,p1,p4,p6,p7,p8,p9">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="obj" org.eventb.core.type="OBJECT"/>
+        <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
+        <org.eventb.core.prIdent name="privileges" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
+        <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        <org.eventb.core.prIdent name="subj_obj_access" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
+        <org.eventb.core.prIdent name="subj_role" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
+        <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈roles ↔ privileges"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="privileges∈objects ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="subjects⊆SUBJECT"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="obj∈OBJECT"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="subj_role∈subjects ↔ roles"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects∪{obj}"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="objects⊆OBJECT"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="¬Reading=Editing"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Reading=Deletion"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Editing=Deletion"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="roles⊆ROLE"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DELETE_OBJECT/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="objects⊆OBJECT">
+            <org.eventb.core.prIdent name="OBJECT" org.eventb.core.type="ℙ(OBJECT)"/>
+            <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="subjects⊆SUBJECT">
+            <org.eventb.core.prIdent name="SUBJECT" org.eventb.core.type="ℙ(SUBJECT)"/>
+            <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Reading=Editing">
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Reading=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Editing=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="roles⊆ROLE">
+            <org.eventb.core.prIdent name="ROLE" org.eventb.core.type="ℙ(ROLE)"/>
+            <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DELETE_OBJECT/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="objects⊆OBJECT">
+            <org.eventb.core.prIdent name="OBJECT" org.eventb.core.type="ℙ(OBJECT)"/>
+            <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="subjects⊆SUBJECT">
+            <org.eventb.core.prIdent name="SUBJECT" org.eventb.core.type="ℙ(SUBJECT)"/>
+            <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Reading=Editing">
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Reading=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Editing=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="roles⊆ROLE">
+            <org.eventb.core.prIdent name="ROLE" org.eventb.core.type="ℙ(ROLE)"/>
+            <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CREATE_SUBJECT/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6" org.eventb.core.prSets="KIND_OF_ACCESS,OBJECT,ROLE,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p15"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p3,p1,p4,p7,p8,p9,p10,p11">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
+        <org.eventb.core.prIdent name="privileges" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
+        <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        <org.eventb.core.prIdent name="subj" org.eventb.core.type="SUBJECT"/>
+        <org.eventb.core.prIdent name="subj_obj_access" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
+        <org.eventb.core.prIdent name="subj_role" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
+        <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈roles ↔ privileges"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="privileges∈objects ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="subjects⊆SUBJECT"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="subj_role∈subjects ↔ roles"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="objects⊆OBJECT"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬subj∈subjects"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="subj_role∈subjects∪{subj} ↔ roles"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Reading=Editing"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="subj∉subjects"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Reading=Deletion"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Editing=Deletion"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="roles⊆ROLE"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="subj∈SUBJECT"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CREATE_SUBJECT/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6" org.eventb.core.prSets="KIND_OF_ACCESS,OBJECT,ROLE,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p15"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p3,p1,p4,p7,p8,p9,p10,p11">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
+        <org.eventb.core.prIdent name="privileges" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
+        <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        <org.eventb.core.prIdent name="subj" org.eventb.core.type="SUBJECT"/>
+        <org.eventb.core.prIdent name="subj_obj_access" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
+        <org.eventb.core.prIdent name="subj_role" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
+        <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈roles ↔ privileges"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="privileges∈objects ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="subjects⊆SUBJECT"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="subj_obj_access∈subjects∪{subj} ↔ objects"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="subj_role∈subjects ↔ roles"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="objects⊆OBJECT"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬subj∈subjects"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Reading=Editing"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="subj∉subjects"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Reading=Deletion"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Editing=Deletion"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="roles⊆ROLE"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="subj∈SUBJECT"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DELETE_SUBJECT/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="objects⊆OBJECT">
+            <org.eventb.core.prIdent name="OBJECT" org.eventb.core.type="ℙ(OBJECT)"/>
+            <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="subjects⊆SUBJECT">
+            <org.eventb.core.prIdent name="SUBJECT" org.eventb.core.type="ℙ(SUBJECT)"/>
+            <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Reading=Editing">
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Reading=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Editing=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="roles⊆ROLE">
+            <org.eventb.core.prIdent name="ROLE" org.eventb.core.type="ℙ(ROLE)"/>
+            <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DELETE_SUBJECT/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="objects⊆OBJECT">
+            <org.eventb.core.prIdent name="OBJECT" org.eventb.core.type="ℙ(OBJECT)"/>
+            <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="subjects⊆SUBJECT">
+            <org.eventb.core.prIdent name="SUBJECT" org.eventb.core.type="ℙ(SUBJECT)"/>
+            <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Reading=Editing">
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Reading=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Editing=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="roles⊆ROLE">
+            <org.eventb.core.prIdent name="ROLE" org.eventb.core.type="ℙ(ROLE)"/>
+            <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CREATE_ROLE/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6" org.eventb.core.prSets="KIND_OF_ACCESS,OBJECT,ROLE,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p3,p1,p4,p7,p8,p9,p10,p11">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
+        <org.eventb.core.prIdent name="privileges" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
+        <org.eventb.core.prIdent name="r" org.eventb.core.type="ROLE"/>
+        <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        <org.eventb.core.prIdent name="subj_obj_access" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
+        <org.eventb.core.prIdent name="subj_role" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
+        <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈roles ↔ privileges"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="privileges∈objects ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="subjects⊆SUBJECT"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="subj_role∈subjects ↔ roles∪{r}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="subj_role∈subjects ↔ roles"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="r∉roles"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="objects⊆OBJECT"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬r∈roles"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Reading=Editing"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Reading=Deletion"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Editing=Deletion"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="roles⊆ROLE"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CREATE_ROLE/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6" org.eventb.core.prSets="KIND_OF_ACCESS,OBJECT,ROLE,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p3,p1,p4,p7,p8,p9,p10,p11">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
+        <org.eventb.core.prIdent name="privileges" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
+        <org.eventb.core.prIdent name="r" org.eventb.core.type="ROLE"/>
+        <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        <org.eventb.core.prIdent name="subj_obj_access" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
+        <org.eventb.core.prIdent name="subj_role" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
+        <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈roles ↔ privileges"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="privileges∈objects ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="subjects⊆SUBJECT"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="subj_role∈subjects ↔ roles"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="r∉roles"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="objects⊆OBJECT"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="permission∈roles∪{r} ↔ privileges"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬r∈roles"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Reading=Editing"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Reading=Deletion"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Editing=Deletion"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="roles⊆ROLE"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DELETE_ROLE/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="objects⊆OBJECT">
+            <org.eventb.core.prIdent name="OBJECT" org.eventb.core.type="ℙ(OBJECT)"/>
+            <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="subjects⊆SUBJECT">
+            <org.eventb.core.prIdent name="SUBJECT" org.eventb.core.type="ℙ(SUBJECT)"/>
+            <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Reading=Editing">
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Reading=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Editing=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="roles⊆ROLE">
+            <org.eventb.core.prIdent name="ROLE" org.eventb.core.type="ℙ(ROLE)"/>
+            <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DELETE_ROLE/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p0" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p1,p2,p3,p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p5"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p7"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="objects⊆OBJECT">
+            <org.eventb.core.prIdent name="OBJECT" org.eventb.core.type="ℙ(OBJECT)"/>
+            <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="subjects⊆SUBJECT">
+            <org.eventb.core.prIdent name="SUBJECT" org.eventb.core.type="ℙ(SUBJECT)"/>
+            <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬Reading=Editing">
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Reading=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Editing=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="roles⊆ROLE">
+            <org.eventb.core.prIdent name="ROLE" org.eventb.core.type="ℙ(ROLE)"/>
+            <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ANCHOR_ROLE/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7" org.eventb.core.prSets="KIND_OF_ACCESS,OBJECT,ROLE,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8,p9,p10,p11"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p8,p9,p10,p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p3,p1,p4,p7,p6,p8,p9,p10,p11">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
+        <org.eventb.core.prIdent name="privileges" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
+        <org.eventb.core.prIdent name="r" org.eventb.core.type="ROLE"/>
+        <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        <org.eventb.core.prIdent name="subj" org.eventb.core.type="SUBJECT"/>
+        <org.eventb.core.prIdent name="subj_obj_access" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
+        <org.eventb.core.prIdent name="subj_role" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
+        <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈roles ↔ privileges"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="privileges∈objects ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="subjects⊆SUBJECT"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="subj_role∪{subj ↦ r}∈subjects ↔ roles"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="subj_role∈subjects ↔ roles"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="r∈roles"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="objects⊆OBJECT"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Reading=Editing"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="subj∈subjects"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Reading=Deletion"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Editing=Deletion"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="roles⊆ROLE"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ANCHOR_ROLE/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ROLE,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p2,p3,p4,p5"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p8"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p9"/>
+                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p10"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="subj" org.eventb.core.type="SUBJECT"/>
+        <org.eventb.core.prIdent name="subj_role" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="subj∈dom(subj_role)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="objects⊆OBJECT">
+            <org.eventb.core.prIdent name="OBJECT" org.eventb.core.type="ℙ(OBJECT)"/>
+            <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="subjects⊆SUBJECT">
+            <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="subj∈dom(subj_role)∧subj_role∈SUBJECT ⇸ ROLE"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="subj_role∈SUBJECT ⇸ ROLE"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="¬Reading=Editing">
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Reading=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+            <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="¬Editing=Deletion">
+            <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+            <org.eventb.core.prIdent name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="roles⊆ROLE">
+            <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="UNLINK_ROLE/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7" org.eventb.core.prSets="KIND_OF_ACCESS,OBJECT,ROLE,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8,p9,p10,p11"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p8,p9,p10,p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p3,p1,p4,p6,p7,p8,p9,p10,p11">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
+        <org.eventb.core.prIdent name="privileges" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
+        <org.eventb.core.prIdent name="r" org.eventb.core.type="ROLE"/>
+        <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        <org.eventb.core.prIdent name="subj" org.eventb.core.type="SUBJECT"/>
+        <org.eventb.core.prIdent name="subj_obj_access" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
+        <org.eventb.core.prIdent name="subj_role" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
+        <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈roles ↔ privileges"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="privileges∈objects ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="subjects⊆SUBJECT"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="subj_role∈subjects ↔ roles"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="subj_role ∖ {subj ↦ r}∈subjects ↔ roles"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="r∈roles"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="objects⊆OBJECT"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Reading=Editing"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="subj∈subjects"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Reading=Deletion"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬Editing=Deletion"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="roles⊆ROLE"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ADD_PRIVILEGE/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6" org.eventb.core.prSets="KIND_OF_ACCESS,OBJECT,ROLE,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p1,p5,p2,p7,p8,p9,p10">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="kind" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="obj" org.eventb.core.type="OBJECT"/>
+        <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
+        <org.eventb.core.prIdent name="privileges" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
+        <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        <org.eventb.core.prIdent name="subj_obj_access" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
+        <org.eventb.core.prIdent name="subj_role" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
+        <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈roles ↔ privileges"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="obj∈objects"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="privileges∈objects ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="subjects⊆SUBJECT"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="subj_role∈subjects ↔ roles"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="objects⊆OBJECT"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="privileges∪{obj ↦ kind}∈objects ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Reading=Editing"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Reading=Deletion"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="kind∈KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Editing=Deletion"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="roles⊆ROLE"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="ADD_PRIVILEGE/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6" org.eventb.core.prSets="KIND_OF_ACCESS,OBJECT,ROLE,SUBJECT">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="Partition rewrites in hyp (partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion}))" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9,p10"/>
+                <org.eventb.core.prHypAction name="SELECT1" org.eventb.core.prHyps="p7,p8,p9,p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p11"/>
+                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p13"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p14"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p6,p4,p1,p5,p2,p7,p8,p9,p10">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+            <org.eventb.core.prString name=".pos" org.eventb.core.prSValue=""/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="Deletion" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="Reading" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="kind" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.prIdent name="obj" org.eventb.core.type="OBJECT"/>
+        <org.eventb.core.prIdent name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
+        <org.eventb.core.prIdent name="permission" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
+        <org.eventb.core.prIdent name="privileges" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
+        <org.eventb.core.prIdent name="roles" org.eventb.core.type="ℙ(ROLE)"/>
+        <org.eventb.core.prIdent name="subj_obj_access" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
+        <org.eventb.core.prIdent name="subj_role" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
+        <org.eventb.core.prIdent name="subjects" org.eventb.core.type="ℙ(SUBJECT)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="permission∈roles ↔ privileges"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="obj∈objects"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="privileges∈objects ↔ KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="subjects⊆SUBJECT"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="subj_role∈subjects ↔ roles"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="permission∈roles ↔ privileges∪{obj ↦ kind}"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="objects⊆OBJECT"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Reading=Editing"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="KIND_OF_ACCESS={Reading,Editing,Deletion}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬Reading=Deletion"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="kind∈KIND_OF_ACCESS"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="¬Editing=Deletion"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="roles⊆ROLE"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.partitionRewrites"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

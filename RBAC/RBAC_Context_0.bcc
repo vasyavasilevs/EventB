@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;org.animb.valuation.valBase">
+    <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})" org.eventb.core.source="/RBAC/RBAC_Context_0.buc|org.eventb.core.contextFile#RBAC_Context_0|org.eventb.core.axiom#+" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scCarrierSet name="ROLE" org.eventb.core.source="/RBAC/RBAC_Context_0.buc|org.eventb.core.contextFile#RBAC_Context_0|org.eventb.core.carrierSet#*" org.eventb.core.type="ℙ(ROLE)"/>
+    <org.eventb.core.scCarrierSet name="KIND_OF_ACCESS" org.eventb.core.source="/RBAC/RBAC_Context_0.buc|org.eventb.core.contextFile#RBAC_Context_0|org.eventb.core.carrierSet#)" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
+    <org.eventb.core.scCarrierSet name="SUBJECT" org.eventb.core.source="/RBAC/RBAC_Context_0.buc|org.eventb.core.contextFile#RBAC_Context_0|org.eventb.core.carrierSet#(" org.eventb.core.type="ℙ(SUBJECT)"/>
+    <org.eventb.core.scConstant name="Deletion" org.eventb.core.source="/RBAC/RBAC_Context_0.buc|org.eventb.core.contextFile#RBAC_Context_0|org.eventb.core.constant#." org.eventb.core.type="KIND_OF_ACCESS"/>
+    <org.eventb.core.scCarrierSet name="OBJECT" org.eventb.core.source="/RBAC/RBAC_Context_0.buc|org.eventb.core.contextFile#RBAC_Context_0|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(OBJECT)"/>
+    <org.eventb.core.scConstant name="Reading" org.eventb.core.source="/RBAC/RBAC_Context_0.buc|org.eventb.core.contextFile#RBAC_Context_0|org.eventb.core.constant#," org.eventb.core.type="KIND_OF_ACCESS"/>
+    <org.eventb.core.scConstant name="Editing" org.eventb.core.source="/RBAC/RBAC_Context_0.buc|org.eventb.core.contextFile#RBAC_Context_0|org.eventb.core.constant#-" org.eventb.core.type="KIND_OF_ACCESS"/>
+</org.eventb.core.scContextFile>
