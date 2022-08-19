@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-    <org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="6" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="5" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="CREATE_OBJECT/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="CREATE_OBJECT/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DELETE_OBJECT/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DELETE_OBJECT/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="7" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="CREATE_SUBJECT/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="CREATE_SUBJECT/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DELETE_SUBJECT/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DELETE_SUBJECT/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="CREATE_ROLE/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="11" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="CREATE_ROLE/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="11" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DELETE_ROLE/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="9" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="DELETE_ROLE/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="9" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ANCHOR_ROLE/grd3/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ANCHOR_ROLE/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="12" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="UNLINK_ROLE/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ADD_PRIVILEGE/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ADD_PRIVILEGE/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="15" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="67" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="67" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="67" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="67" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="CREATE_OBJECT/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="CREATE_OBJECT/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DELETE_OBJECT/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DELETE_OBJECT/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DELETE_OBJECT/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DELETE_OBJECT/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="CREATE_SUBJECT/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="CREATE_SUBJECT/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DELETE_SUBJECT/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DELETE_SUBJECT/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DELETE_SUBJECT/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="CREATE_ROLE/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="CREATE_ROLE/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DELETE_ROLE/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DELETE_ROLE/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="DELETE_ROLE/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="LINK_ROLE/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="LINK_ROLE/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="UNLINK_ROLE/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="75" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="UNLINK_ROLE/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="75" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ADD_PERMISSION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ADD_PERMISSION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ADD_PERMISSION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="REMOVE_PERMISSION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="REMOVE_PERMISSION/inv8/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ACCESS_OPERATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ACCESS_OPERATION/inv8/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="73" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

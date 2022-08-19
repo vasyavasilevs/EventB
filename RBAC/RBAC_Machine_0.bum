@@ -26,58 +26,84 @@
     <org.eventb.core.invariant name="6" org.eventb.core.label="inv7" org.eventb.core.predicate="subj_obj_access ∈ subjects ↔ objects"/>
     <org.eventb.core.event name="7" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="CREATE_OBJECT">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="obj"/>
-        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="obj ∈ OBJECT"/>
         <org.eventb.core.action name=")" org.eventb.core.assignment="objects ≔ objects ∪ {obj}" org.eventb.core.label="act1"/>
-        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="obj ∉ objects"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="obj ∉ objects"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="8" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DELETE_OBJECT">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="obj"/>
         <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="obj ∈ objects"/>
         <org.eventb.core.action name=")" org.eventb.core.assignment="objects ≔ objects ∖ {obj}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="privileges ≔ {obj} ⩤ privileges" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="subj_obj_access ≔ subj_obj_access ⩥ {obj}" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="permission ≔ permission ⩥ ({obj} ◁ privileges)" org.eventb.core.label="act4"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="9" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="CREATE_SUBJECT">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="subj"/>
-        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="subj ∈ SUBJECT"/>
         <org.eventb.core.action name=")" org.eventb.core.assignment="subjects ≔ subjects ∪ {subj}" org.eventb.core.label="act1"/>
-        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="subj ∉ subjects"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="subj ∉ subjects"/>
     </org.eventb.core.event>
     <org.eventb.core.event name=":" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DELETE_SUBJECT">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="subj"/>
         <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="subj ∈ subjects"/>
         <org.eventb.core.action name=")" org.eventb.core.assignment="subjects ≔ subjects ∖ {subj}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="subj_role ≔ {subj} ⩤ subj_role" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="subj_obj_access ≔ {subj} ⩤ subj_obj_access" org.eventb.core.label="act3"/>
     </org.eventb.core.event>
     <org.eventb.core.event name=";" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="CREATE_ROLE">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
-        <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∈ ROLE"/>
-        <org.eventb.core.guard name=")" org.eventb.core.label="grd2" org.eventb.core.predicate="r ∉ roles"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∉ roles"/>
         <org.eventb.core.action name="*" org.eventb.core.assignment="roles ≔ roles ∪ {r}" org.eventb.core.label="act1"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="=" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="DELETE_ROLE">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
         <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∈ roles"/>
         <org.eventb.core.action name=")" org.eventb.core.assignment="roles ≔ roles ∖ {r}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="subj_role ≔ subj_role ⩥ {r}" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="permission ≔ {r} ⩤ permission" org.eventb.core.label="act3"/>
     </org.eventb.core.event>
-    <org.eventb.core.event name="&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ANCHOR_ROLE">
+    <org.eventb.core.event name="&gt;" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="LINK_ROLE">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
         <org.eventb.core.parameter name="(" org.eventb.core.identifier="subj"/>
         <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="r ∈ roles"/>
         <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="subj ∈ subjects"/>
-        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="subj_role(subj) ≠ r"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd3" org.eventb.core.predicate="subj ↦ r ∉ subj_role"/>
         <org.eventb.core.action name="," org.eventb.core.assignment="subj_role ≔ subj_role ∪ {subj ↦ r}" org.eventb.core.label="act1"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="?" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="UNLINK_ROLE">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="r"/>
         <org.eventb.core.parameter name="(" org.eventb.core.identifier="subj"/>
-        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="{subj ↦ r} ∈ subj_role"/>
         <org.eventb.core.action name="*" org.eventb.core.assignment="subj_role ≔ subj_role ∖ {subj ↦ r}" org.eventb.core.label="act1"/>
-        <org.eventb.core.guard name="+" org.eventb.core.label="grd2" org.eventb.core.predicate="subj ∈ subjects"/>
-        <org.eventb.core.guard name="," org.eventb.core.label="grd3" org.eventb.core.predicate="r ∈ roles"/>
+        <org.eventb.core.guard name="+" org.eventb.core.label="grd1" org.eventb.core.predicate="subj ↦ r ∈ subj_role"/>
+        <org.eventb.core.guard name="," org.eventb.core.label="grd2" org.eventb.core.predicate="subj_obj_access[{subj}] ∩ dom(permission[{r}]) = ∅"/>
     </org.eventb.core.event>
-    <org.eventb.core.event name="@" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ADD_PRIVILEGE">
+    <org.eventb.core.event name="@" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ADD_PERMISSION">
         <org.eventb.core.parameter name="'" org.eventb.core.identifier="obj"/>
         <org.eventb.core.parameter name="(" org.eventb.core.identifier="kind"/>
         <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="obj ∈ objects"/>
         <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="kind ∈ KIND_OF_ACCESS"/>
-        <org.eventb.core.action name="+" org.eventb.core.assignment="privileges ≔ privileges ∪ {obj ↦ kind}" org.eventb.core.comment="//link with role? or this will be in permission, maybe merge priv and perm" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="privileges ≔ privileges ∪ {obj ↦ kind}" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="permission ≔ permission ∪ {r ↦ (obj ↦ kind)}" org.eventb.core.label="act2"/>
+        <org.eventb.core.parameter name="-" org.eventb.core.identifier="r"/>
+        <org.eventb.core.guard name="." org.eventb.core.label="grd3" org.eventb.core.predicate="r ∈ roles"/>
+        <org.eventb.core.guard name="0" org.eventb.core.label="grd4" org.eventb.core.predicate="obj ↦ kind ∉ privileges"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd5" org.eventb.core.predicate="obj ↦ kind ∉ permission[{r}] "/>
     </org.eventb.core.event>
+    <org.eventb.core.event name="A" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="REMOVE_PERMISSION">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="obj"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="kind"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="r"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd1" org.eventb.core.predicate="obj ↦ kind ∈ permission[{r}]"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="permission ≔ permission ∖ {r ↦ (obj ↦ kind)}" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="B" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ACCESS_OPERATION">
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="subj"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="obj"/>
+        <org.eventb.core.parameter name=")" org.eventb.core.identifier="kind"/>
+        <org.eventb.core.guard name="*" org.eventb.core.comment="//ensure fresh access" org.eventb.core.label="grd1" org.eventb.core.predicate="obj ∉ subj_obj_access[{subj}]"/>
+        <org.eventb.core.guard name="-" org.eventb.core.comment="//subject's roles are included in roles of this (obj ↦ kind) privilege" org.eventb.core.label="grd2" org.eventb.core.predicate="subj_role[{subj}] ∩ permission∼[{obj ↦ kind}] ≠ ∅"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="subj_obj_access ≔ subj_obj_access ∪ {subj ↦ obj}" org.eventb.core.label="act1"/>
+        <org.eventb.core.guard name="/" org.eventb.core.label="grd3" org.eventb.core.predicate="subj ∈ subjects"/>
+        <org.eventb.core.guard name="0" org.eventb.core.label="grd4" org.eventb.core.predicate="obj ∈ objects"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="C" org.eventb.core.label="inv8" org.eventb.core.predicate="∀ subj, obj, kind · subj ↦ obj ∈ subj_obj_access ∧ kind ∈ KIND_OF_ACCESS ⇒ subj_role[{subj}] ∩ permission∼[{obj ↦ kind}] ≠ ∅ "/>
 </org.eventb.core.machineFile>

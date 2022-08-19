@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="15">
+<org.eventb.core.poFile org.eventb.core.poStamp="75">
     <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
         <org.eventb.core.poIdentifier name="ROLE" org.eventb.core.type="ℙ(ROLE)"/>
         <org.eventb.core.poIdentifier name="KIND_OF_ACCESS" org.eventb.core.type="ℙ(KIND_OF_ACCESS)"/>
@@ -10,7 +10,7 @@
         <org.eventb.core.poIdentifier name="Editing" org.eventb.core.type="KIND_OF_ACCESS"/>
         <org.eventb.core.poPredicate name="KIND_OF_ACCEST" org.eventb.core.predicate="partition(KIND_OF_ACCESS,{Reading},{Editing},{Deletion})" org.eventb.core.source="/RBAC/RBAC_Context_0.buc|org.eventb.core.contextFile#RBAC_Context_0|org.eventb.core.axiom#+"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="5">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="67">
         <org.eventb.core.poIdentifier name="objects" org.eventb.core.type="ℙ(OBJECT)"/>
         <org.eventb.core.poIdentifier name="roles" org.eventb.core.type="ℙ(ROLE)"/>
         <org.eventb.core.poIdentifier name="subj_obj_access" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
@@ -19,7 +19,7 @@
         <org.eventb.core.poIdentifier name="permission" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
         <org.eventb.core.poIdentifier name="subj_role" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="5">
+    <org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="67">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accest"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(SUBJECT×ROLE))∈(∅ ⦂ ℙ(SUBJECT)) ↔ (∅ ⦂ ℙ(ROLE))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#0"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#'"/>
@@ -27,7 +27,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="6">
+    <org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="67">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accest"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(OBJECT×KIND_OF_ACCESS))∈(∅ ⦂ ℙ(OBJECT)) ↔ KIND_OF_ACCESS" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#2"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#'"/>
@@ -35,7 +35,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="5">
+    <org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="67">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accest"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ROLE×(OBJECT×KIND_OF_ACCESS)))∈(∅ ⦂ ℙ(ROLE)) ↔ (∅ ⦂ ℙ(OBJECT×KIND_OF_ACCESS))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#'"/>
@@ -43,7 +43,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="5">
+    <org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="67">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accest"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(SUBJECT×OBJECT))∈(∅ ⦂ ℙ(SUBJECT)) ↔ (∅ ⦂ ℙ(OBJECT))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#6"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#'"/>
@@ -51,7 +51,15 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accest" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poSequent name="INITIALISATION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accest"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀subj⦂SUBJECT,obj⦂OBJECT,kind⦂KIND_OF_ACCESS·subj ↦ obj∈(∅ ⦂ ℙ(SUBJECT×OBJECT))∧kind∈KIND_OF_ACCESS⇒(∅ ⦂ ℙ(SUBJECT×ROLE))[{subj}]∩(∅ ⦂ ℙ(ROLE×(OBJECT×KIND_OF_ACCESS)))∼[{obj ↦ kind}]≠(∅ ⦂ ℙ(ROLE))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#INITIALISATION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accest" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="67">
         <org.eventb.core.poIdentifier name="subjects'" org.eventb.core.type="ℙ(SUBJECT)"/>
         <org.eventb.core.poIdentifier name="subj_role'" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
         <org.eventb.core.poIdentifier name="privileges'" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
@@ -60,8 +68,8 @@
         <org.eventb.core.poIdentifier name="permission'" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
         <org.eventb.core.poIdentifier name="subj_obj_access'" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accest" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accest" org.eventb.core.poStamp="0"/>
-    <org.eventb.core.poSequent name="CREATE_OBJECT/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="8">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accest" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accest" org.eventb.core.poStamp="67"/>
+    <org.eventb.core.poSequent name="CREATE_OBJECT/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesu"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="privileges∈objects∪{obj} ↔ KIND_OF_ACCESS" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#2"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#7"/>
@@ -69,7 +77,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#CREATE_OBJECT\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="CREATE_OBJECT/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="8">
+    <org.eventb.core.poSequent name="CREATE_OBJECT/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesu"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects∪{obj}" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#6"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#7"/>
@@ -77,38 +85,56 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#CREATE_OBJECT\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accesu" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accesu" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="73">
         <org.eventb.core.poIdentifier name="obj" org.eventb.core.type="OBJECT"/>
         <org.eventb.core.poIdentifier name="objects'" org.eventb.core.type="ℙ(OBJECT)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accesu" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accesu" org.eventb.core.poStamp="8">
-        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="obj∈OBJECT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#7|org.eventb.core.guard#("/>
-        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="obj∉objects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#7|org.eventb.core.guard#*"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accesu" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accesu" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="obj∉objects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#7|org.eventb.core.guard#*"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="DELETE_OBJECT/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="7">
+    <org.eventb.core.poSequent name="DELETE_OBJECT/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesv"/>
-        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="privileges∈objects ∖ {obj} ↔ KIND_OF_ACCESS" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#2"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{obj} ⩤ privileges∈objects ∖ {obj} ↔ KIND_OF_ACCESS" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#2"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#8"/>
         <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#2"/>
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#DELETE_OBJECT\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="DELETE_OBJECT/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="7">
+    <org.eventb.core.poSequent name="DELETE_OBJECT/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesv"/>
-        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects ∖ {obj}" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#6"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permission ⩥ ({obj} ◁ privileges)∈roles ↔ {obj} ⩤ privileges" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#DELETE_OBJECT\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="DELETE_OBJECT/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesv"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_obj_access ⩥ {obj}∈subjects ↔ objects ∖ {obj}" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#6"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#8"/>
         <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#6"/>
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#DELETE_OBJECT\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accesv" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poSequent name="DELETE_OBJECT/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesv"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀subj⦂SUBJECT,obj0⦂OBJECT,kind⦂KIND_OF_ACCESS·subj ↦ obj0∈subj_obj_access ⩥ {obj}∧kind∈KIND_OF_ACCESS⇒subj_role[{subj}]∩(permission ⩥ ({obj} ◁ privileges))∼[{obj0 ↦ kind}]≠(∅ ⦂ ℙ(ROLE))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#8"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#DELETE_OBJECT\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accesv" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="73">
+        <org.eventb.core.poIdentifier name="privileges'" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
         <org.eventb.core.poIdentifier name="obj" org.eventb.core.type="OBJECT"/>
         <org.eventb.core.poIdentifier name="objects'" org.eventb.core.type="ℙ(OBJECT)"/>
+        <org.eventb.core.poIdentifier name="permission'" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
+        <org.eventb.core.poIdentifier name="subj_obj_access'" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accesv" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accesv" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accesv" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accesv" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="obj∈objects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#8|org.eventb.core.guard#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="CREATE_SUBJECT/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="8">
+    <org.eventb.core.poSequent name="CREATE_SUBJECT/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesw"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_role∈subjects∪{subj} ↔ roles" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#0"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#9"/>
@@ -116,7 +142,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#CREATE_SUBJECT\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="CREATE_SUBJECT/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="8">
+    <org.eventb.core.poSequent name="CREATE_SUBJECT/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesw"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_obj_access∈subjects∪{subj} ↔ objects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#6"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#9"/>
@@ -124,38 +150,47 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#CREATE_SUBJECT\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accesw" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accesw" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="73">
         <org.eventb.core.poIdentifier name="subjects'" org.eventb.core.type="ℙ(SUBJECT)"/>
         <org.eventb.core.poIdentifier name="subj" org.eventb.core.type="SUBJECT"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accesw" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accesw" org.eventb.core.poStamp="0">
-        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="subj∈SUBJECT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#9|org.eventb.core.guard#("/>
-        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="subj∉subjects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#9|org.eventb.core.guard#*"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accesw" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accesw" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="subj∉subjects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#9|org.eventb.core.guard#*"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="DELETE_SUBJECT/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="8">
+    <org.eventb.core.poSequent name="DELETE_SUBJECT/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesx"/>
-        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_role∈subjects ∖ {subj} ↔ roles" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{subj} ⩤ subj_role∈subjects ∖ {subj} ↔ roles" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#0"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#:"/>
         <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#0"/>
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#DELETE_SUBJECT\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="DELETE_SUBJECT/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="8">
+    <org.eventb.core.poSequent name="DELETE_SUBJECT/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesx"/>
-        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_obj_access∈subjects ∖ {subj} ↔ objects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#6"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{subj} ⩤ subj_obj_access∈subjects ∖ {subj} ↔ objects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#6"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#:"/>
         <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#6"/>
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#DELETE_SUBJECT\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accesx" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poSequent name="DELETE_SUBJECT/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesx"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀subj0⦂SUBJECT,obj⦂OBJECT,kind⦂KIND_OF_ACCESS·subj0 ↦ obj∈{subj} ⩤ subj_obj_access∧kind∈KIND_OF_ACCESS⇒({subj} ⩤ subj_role)[{subj0}]∩permission∼[{obj ↦ kind}]≠(∅ ⦂ ℙ(ROLE))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#:"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#DELETE_SUBJECT\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accesx" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="73">
         <org.eventb.core.poIdentifier name="subjects'" org.eventb.core.type="ℙ(SUBJECT)"/>
+        <org.eventb.core.poIdentifier name="subj_role'" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
         <org.eventb.core.poIdentifier name="subj" org.eventb.core.type="SUBJECT"/>
+        <org.eventb.core.poIdentifier name="subj_obj_access'" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accesx" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accesx" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accesx" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accesx" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="subj∈subjects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#:|org.eventb.core.guard#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="CREATE_ROLE/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="11">
+    <org.eventb.core.poSequent name="CREATE_ROLE/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesy"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_role∈subjects ↔ roles∪{r}" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#0"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#;"/>
@@ -163,7 +198,7 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#CREATE_ROLE\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="CREATE_ROLE/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="11">
+    <org.eventb.core.poSequent name="CREATE_ROLE/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesy"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permission∈roles∪{r} ↔ privileges" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#;"/>
@@ -171,64 +206,73 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#CREATE_ROLE\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accesy" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accesy" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="73">
         <org.eventb.core.poIdentifier name="r" org.eventb.core.type="ROLE"/>
         <org.eventb.core.poIdentifier name="roles'" org.eventb.core.type="ℙ(ROLE)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accesy" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accesy" org.eventb.core.poStamp="11">
-        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈ROLE" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#;|org.eventb.core.guard#("/>
-        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="r∉roles" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#;|org.eventb.core.guard#)"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accesy" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accesy" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∉roles" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#;|org.eventb.core.guard#)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="DELETE_ROLE/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="9">
+    <org.eventb.core.poSequent name="DELETE_ROLE/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesz"/>
-        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_role∈subjects ↔ roles ∖ {r}" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#0"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_role ⩥ {r}∈subjects ↔ roles ∖ {r}" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#0"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#="/>
         <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#0"/>
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#DELETE_ROLE\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="DELETE_ROLE/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="9">
+    <org.eventb.core.poSequent name="DELETE_ROLE/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesz"/>
-        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permission∈roles ∖ {r} ↔ privileges" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{r} ⩤ permission∈roles ∖ {r} ↔ privileges" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#="/>
         <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#DELETE_ROLE\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accesz" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poSequent name="DELETE_ROLE/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accesz"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀subj⦂SUBJECT,obj⦂OBJECT,kind⦂KIND_OF_ACCESS·subj ↦ obj∈subj_obj_access∧kind∈KIND_OF_ACCESS⇒(subj_role ⩥ {r})[{subj}]∩({r} ⩤ permission)∼[{obj ↦ kind}]≠(∅ ⦂ ℙ(ROLE))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#="/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#DELETE_ROLE\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accesz" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="73">
+        <org.eventb.core.poIdentifier name="subj_role'" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
         <org.eventb.core.poIdentifier name="r" org.eventb.core.type="ROLE"/>
         <org.eventb.core.poIdentifier name="roles'" org.eventb.core.type="ℙ(ROLE)"/>
+        <org.eventb.core.poIdentifier name="permission'" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accesz" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accesz" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accesz" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accesz" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈roles" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#=|org.eventb.core.guard#("/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="ANCHOR_ROLE/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="12">
-        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTHYPsubj_obj_acces{("/>
-        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj∈dom(subj_role)∧subj_role∈SUBJECT ⇸ ROLE" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#&gt;|org.eventb.core.guard#+"/>
-        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#&gt;|org.eventb.core.guard#+"/>
-        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTHYPsubj_obj_acces{("/>
-    </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="ANCHOR_ROLE/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="12">
+    <org.eventb.core.poSequent name="LINK_ROLE/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_acces{"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_role∪{subj ↦ r}∈subjects ↔ roles" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#0"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#&gt;"/>
         <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#0"/>
-        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#ANCHOR_ROLE\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#LINK_ROLE\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_acces{" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poSequent name="LINK_ROLE/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_acces{"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀subj0⦂SUBJECT,obj⦂OBJECT,kind⦂KIND_OF_ACCESS·subj0 ↦ obj∈subj_obj_access∧kind∈KIND_OF_ACCESS⇒(subj_role∪{subj ↦ r})[{subj0}]∩permission∼[{obj ↦ kind}]≠(∅ ⦂ ℙ(ROLE))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#&gt;"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#LINK_ROLE\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_acces{" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="73">
         <org.eventb.core.poIdentifier name="subj_role'" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
         <org.eventb.core.poIdentifier name="r" org.eventb.core.type="ROLE"/>
         <org.eventb.core.poIdentifier name="subj" org.eventb.core.type="SUBJECT"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPsubj_obj_acces{(" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_acces{" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_acces{" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_acces{" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈roles" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#&gt;|org.eventb.core.guard#)"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="subj∈subjects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#&gt;|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="subj ↦ r∉subj_role" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#&gt;|org.eventb.core.guard#+"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_acces{" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTHYPsubj_obj_acces{(" org.eventb.core.poStamp="12">
-        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="subj_role(subj)≠r" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#&gt;|org.eventb.core.guard#+"/>
-    </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="UNLINK_ROLE/inv4/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="14">
+    <org.eventb.core.poSequent name="UNLINK_ROLE/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="75">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_acces\|"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_role ∖ {subj ↦ r}∈subjects ↔ roles" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#0"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#?"/>
@@ -236,41 +280,115 @@
         <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#UNLINK_ROLE\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_acces|" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poSequent name="UNLINK_ROLE/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="75">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_acces\|"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀subj0⦂SUBJECT,obj⦂OBJECT,kind⦂KIND_OF_ACCESS·subj0 ↦ obj∈subj_obj_access∧kind∈KIND_OF_ACCESS⇒(subj_role ∖ {subj ↦ r})[{subj0}]∩permission∼[{obj ↦ kind}]≠(∅ ⦂ ℙ(ROLE))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#?"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#UNLINK_ROLE\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_acces|" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="73">
         <org.eventb.core.poIdentifier name="subj_role'" org.eventb.core.type="ℙ(SUBJECT×ROLE)"/>
         <org.eventb.core.poIdentifier name="r" org.eventb.core.type="ROLE"/>
         <org.eventb.core.poIdentifier name="subj" org.eventb.core.type="SUBJECT"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_acces|" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_acces\|" org.eventb.core.poStamp="14">
-        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="subj∈subjects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#?|org.eventb.core.guard#+"/>
-        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="r∈roles" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#?|org.eventb.core.guard#,"/>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_acces|" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_acces\|" org.eventb.core.poStamp="75">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="subj ↦ r∈subj_role" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#?|org.eventb.core.guard#+"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="subj_obj_access[{subj}]∩dom(permission[{r}])=(∅ ⦂ ℙ(OBJECT))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#?|org.eventb.core.guard#,"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="ADD_PRIVILEGE/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="15">
+    <org.eventb.core.poSequent name="ADD_PERMISSION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_acces}"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="privileges∪{obj ↦ kind}∈objects ↔ KIND_OF_ACCESS" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#2"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#@"/>
         <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#2"/>
-        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#ADD_PRIVILEGE\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#ADD_PERMISSION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="ADD_PRIVILEGE/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="15">
+    <org.eventb.core.poSequent name="ADD_PERMISSION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_acces}"/>
-        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permission∈roles ↔ privileges∪{obj ↦ kind}" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permission∪{r ↦ (obj ↦ kind)}∈roles ↔ privileges∪{obj ↦ kind}" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#@"/>
         <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
-        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#ADD_PRIVILEGE\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#ADD_PERMISSION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_acces}" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+    <org.eventb.core.poSequent name="ADD_PERMISSION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_acces}"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀subj⦂SUBJECT,obj0⦂OBJECT,kind0⦂KIND_OF_ACCESS·subj ↦ obj0∈subj_obj_access∧kind0∈KIND_OF_ACCESS⇒subj_role[{subj}]∩(permission∪{r ↦ (obj ↦ kind)})∼[{obj0 ↦ kind0}]≠(∅ ⦂ ℙ(ROLE))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#@"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#ADD_PERMISSION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_acces}" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="73">
         <org.eventb.core.poIdentifier name="kind" org.eventb.core.type="KIND_OF_ACCESS"/>
         <org.eventb.core.poIdentifier name="privileges'" org.eventb.core.type="ℙ(OBJECT×KIND_OF_ACCESS)"/>
+        <org.eventb.core.poIdentifier name="r" org.eventb.core.type="ROLE"/>
         <org.eventb.core.poIdentifier name="obj" org.eventb.core.type="OBJECT"/>
+        <org.eventb.core.poIdentifier name="permission'" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_acces}" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_acces}" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_acces}" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_acces}" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="obj∈objects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#@|org.eventb.core.guard#)"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="kind∈KIND_OF_ACCESS" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#@|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="r∈roles" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#@|org.eventb.core.guard#."/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="obj ↦ kind∉privileges" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#@|org.eventb.core.guard#0"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="obj ↦ kind∉permission[{r}]" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#@|org.eventb.core.guard#\/"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="6">
+    <org.eventb.core.poSequent name="REMOVE_PERMISSION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_acces~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="permission ∖ {r ↦ (obj ↦ kind)}∈roles ↔ privileges" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#A"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#REMOVE_PERMISSION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="REMOVE_PERMISSION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_acces~"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀subj⦂SUBJECT,obj0⦂OBJECT,kind0⦂KIND_OF_ACCESS·subj ↦ obj0∈subj_obj_access∧kind0∈KIND_OF_ACCESS⇒subj_role[{subj}]∩(permission ∖ {r ↦ (obj ↦ kind)})∼[{obj0 ↦ kind0}]≠(∅ ⦂ ℙ(ROLE))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#A"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#REMOVE_PERMISSION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_acces~" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="73">
+        <org.eventb.core.poIdentifier name="kind" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.poIdentifier name="r" org.eventb.core.type="ROLE"/>
+        <org.eventb.core.poIdentifier name="obj" org.eventb.core.type="OBJECT"/>
+        <org.eventb.core.poIdentifier name="permission'" org.eventb.core.type="ℙ(ROLE×(OBJECT×KIND_OF_ACCESS))"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_acces~" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_acces~" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="obj ↦ kind∈permission[{r}]" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#A|org.eventb.core.guard#*"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ACCESS_OPERATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accet'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="subj_obj_access∪{subj ↦ obj}∈subjects ↔ objects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#6"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#B"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#6"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#ACCESS_OPERATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD6"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ACCESS_OPERATION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTALLHYPsubj_obj_accet'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀subj0⦂SUBJECT,obj0⦂OBJECT,kind⦂KIND_OF_ACCESS·subj0 ↦ obj0∈subj_obj_access∪{subj ↦ obj}∧kind∈KIND_OF_ACCESS⇒subj_role[{subj0}]∩permission∼[{obj0 ↦ kind}]≠(∅ ⦂ ℙ(ROLE))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#B"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poSequent#ACCESS_OPERATION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD7"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTsubj_obj_accet'" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="73">
+        <org.eventb.core.poIdentifier name="kind" org.eventb.core.type="KIND_OF_ACCESS"/>
+        <org.eventb.core.poIdentifier name="subj" org.eventb.core.type="SUBJECT"/>
+        <org.eventb.core.poIdentifier name="obj" org.eventb.core.type="OBJECT"/>
+        <org.eventb.core.poIdentifier name="subj_obj_access'" org.eventb.core.type="ℙ(SUBJECT×OBJECT)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPsubj_obj_accet'" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#EVTIDENTsubj_obj_accet'" org.eventb.core.poStamp="73">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="obj∉subj_obj_access[{subj}]" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#B|org.eventb.core.guard#*"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="subj_role[{subj}]∩permission∼[{obj ↦ kind}]≠(∅ ⦂ ℙ(ROLE))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#B|org.eventb.core.guard#-"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="subj∈subjects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#B|org.eventb.core.guard#\/"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="obj∈objects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.event#B|org.eventb.core.guard#0"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RBAC/RBAC_Machine_0.bpo|org.eventb.core.poFile#RBAC_Machine_0|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="73">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="objects⊆OBJECT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#*"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="subjects⊆SUBJECT" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#,"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="roles⊆ROLE" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#."/>
@@ -278,5 +396,6 @@
         <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="privileges∈objects ↔ KIND_OF_ACCESS" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#2"/>
         <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="permission∈roles ↔ privileges" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#4"/>
         <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="subj_obj_access∈subjects ↔ objects" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#6"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="∀subj⦂SUBJECT,obj⦂OBJECT,kind⦂KIND_OF_ACCESS·subj ↦ obj∈subj_obj_access∧kind∈KIND_OF_ACCESS⇒subj_role[{subj}]∩permission∼[{obj ↦ kind}]≠(∅ ⦂ ℙ(ROLE))" org.eventb.core.source="/RBAC/RBAC_Machine_0.bum|org.eventb.core.machineFile#RBAC_Machine_0|org.eventb.core.invariant#C"/>
     </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>
